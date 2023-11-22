@@ -1,0 +1,49 @@
+class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+
+    def es_mayor_de_edad(self):
+        return self.edad >= 18
+
+    def imprimir_informacion(self):
+        print(f"Nombre: {self.nombre}")
+        print(f"Edad: {self.edad}")
+        print(f"¿Es mayor de edad?: {'Sí' if self.es_mayor_de_edad() else 'No'}")
+
+
+# Demostración de uso
+# Crear una instancia de la clase Persona
+persona1 = Persona("Juan", 25)
+
+# Acceder a atributos y llamar a métodos
+print(f"Nombre: {persona1.nombre}")
+print(f"Edad: {persona1.edad}")
+print(f"¿Es mayor de edad?: {persona1.es_mayor_de_edad()}")
+
+# Llamar a un método
+persona1.imprimir_informacion()
+
+ #Este código define una clase llamada Persona, que se utiliza para representar información sobre una persona, como su nombre y edad. Aquí está una #descripción de las partes principales del código:
+
+#Clase Persona:
+
+#La clase tiene un constructor __init__ que se llama cuando se crea una nueva instancia de la clase. Toma dos parámetros, nombre y edad, y los asigna #a las variables de instancia self.nombre y self.edad.
+
+#Hay un método llamado es_mayor_de_edad que devuelve True si la persona tiene 18 años o más, y False en caso contrario. Este método se ha definido #como una propiedad utilizando el decorador @property, lo que significa que se puede acceder como un atributo sin necesidad de llamarlo como un #método.
+
+#El método imprimir_informacion imprime en la consola información sobre la persona, incluyendo el nombre, la edad y si es mayor de edad o no.
+
+#Demostración de uso:
+
+#Se crea una instancia de la clase Persona llamada persona1 con nombre "Juan" y edad 25.
+#Se accede a los atributos (nombre y edad) y a la propiedad (es_mayor_de_edad) de la instancia persona1 y se imprime la información en la consola.
+#Se llama al método imprimir_informacion para mostrar la información completa de la persona en la consola.
+#Uso potencial:
+#Este código proporciona una estructura básica para manejar información sobre personas y puede ser utilizado en diversos contextos. Algunos ejemplos #de uso podrían ser:
+
+#Registro de Usuarios: Podrías utilizar esta clase para crear perfiles de usuario en un sistema.
+
+#Validación de Edad: El método es_mayor_de_edad podría ser útil para verificar si un usuario tiene la edad suficiente para acceder a ciertos #servicios.
+
+#Manejo de Datos de Personas: Podrías utilizar esta clase como parte de un sistema más grande que gestiona información sobre personas, como un #sistema de gestión de empleados.
